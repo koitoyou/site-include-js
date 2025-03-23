@@ -7,7 +7,6 @@ const headerInclude = async (tag,id) => {
       }
       return response.text()
     }).then(data => {
-      console.debug(data);
       $(tag + id).html(data);
     })
     .catch(error => { console.debug(error) });
